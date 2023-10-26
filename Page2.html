@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body >
+    <header>
+            <div id ="Page2header">
+                <h1>My Custom Form</h1>
+            </div>
+    </header>
+    <main>
+       <form action="page3.html" method="get" id="P2form">
+            <div class="P2labels">
+                    <label for ="title">Video Title</label>
+            </div>
+            <div class="P2Inputs">
+                    <Input type="text" id ="title" placeholder="Video Title" required></Input>
+            </div>
+            <div class="P2labels">
+                    <label for ="email">Email Address</label>
+            </div>
+            <div class="P2Inputs">
+                    <Input type="email" id ="email" placeholder="Ahmed207301@gmail.com">
+            </div>
+            <div class="P2labels">
+                    <label for ="favorite">Pick Your Favorite</label>
+            </div>
+            <div class="P2Inputs">
+                <select name="favorite" id ="favorite" title="selecte" size="1"  >
+                    <option  value="imp4" selected>IMP4</option>
+                    <option value="Png">Png</option>
+                    <option value="Video">Video</option>
+                </select>
+            </div>
+            <div class="P2labels">
+                <label for ="TellUs">Tell Us About YourSelf</label>
+            </div>
+            <div class="P2Inputs">
+                <textarea name="TellUs" id="TellUs" cols="30" rows="10" placeholder="MY Name is Ahmed Reda........"></textarea>
+            </div>
+            <div class="P2labels">
+                <label for ="data" id ="date">Pick Upload Data</label>
+            </div>
+            <div class="P2Inputs">
+        
+                <input type="date" name="data" id="data" value="Upload Data">
+            </div>
+            <div class="P2labels">
+               <label abel for ="file">Pick Upload file</label>
+            </div>
+            <div class="P2Inputs">
+                        <input type="file" name="file" id="file" value="Upload Data">
+            </div> 
+            <div class="P2labels">
+                <label abel for ="kid">This Video for Kid?</label>
+            </div>
+            <div class="P2Inputs">
+                <input type="radio" id="yy" name="kid?" value="y">
+                <label for="yy">Yes</label></input>
+                <input type="radio" id="nn" name="kid?" value="n" checked>
+                <label for="nn">NO</label>
+            </div>
+            <div class="P2Inputs">
+                <input type="submit">
+            </div>
+        </form>   
+    </main>
+</body>
+</html>

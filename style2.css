@@ -1,0 +1,122 @@
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto auto auto;
+  grid-template-areas:
+    "Nav   Header Header Header Header Header "
+    "Nav  IMG Dic Dic Dic Upload"
+    "Nav  P_list P_list P_list P_list P_list ";
+  gap: 20px;
+  height: 100vh;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.Nav {
+  font-size: 18px;
+  background-color: #9acd32; /* Yellow-Green color */
+  width: 200px;
+  grid-area: Nav;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.Nav li {
+  margin: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.Header {
+  background-color: #9acd32;
+  grid-area: Header;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.Header h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.Header p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.IMG {
+  grid-area: IMG;
+  text-align: center;
+}
+
+.IMG img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Dic {
+  background-color: #9acd32;
+  grid-area: Dic;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Dic h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Dic p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.P_list {
+  grid-area: P_list;
+  text-align: center;
+}
+
+.P_list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.P_list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.P_list iframe {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.Upload {
+  grid-area: Upload;
+  text-align: center;
+}
+
+#M1Upload {
+  background-color: #9acd32;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#M1Upload:hover {
+  background-color: hsl(83, 78%, 40%);
+}

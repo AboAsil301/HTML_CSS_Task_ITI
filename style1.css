@@ -1,0 +1,210 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  background-color: rgb(207, 252, 253);
+}
+
+div {
+  background-color: yellowgreen;
+  width: auto;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+.P2labels {
+  width: 750px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-style: bold;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+label {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.P2Inputs {
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+#P2form {
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  height: 800px;
+  width: 800px;
+}
+
+#Page2header {
+  background-color: white;
+  padding: 1rem;
+  width: 800px;
+  font-weight: normal;
+  font-size: medium;
+  margin: auto;
+  text-align: center;
+}
+input,
+select,
+textarea {
+  border: outset;
+  border-radius: 20px;
+  width: 750px;
+  height: 40px;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-style: initial;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+}
+textarea {
+  height: 100px;
+}
+.P2Inputs input[type="file"] {
+  z-index: auto;
+  top: 15px;
+  left: 20px;
+  font-size: 17px;
+  color: #b8b8b8;
+}
+.P2Inputs input[type="radio"] {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+.P2Inputs input[type="submit"] {
+  height: 40px;
+  background-color: yellowgreen;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+.P2Inputs input[type="submit"]:hover {
+  font-size: 150%;
+  background-color: hsl(83, 78%, 40%);
+  box-shadow: 0 0 10px rgba(219, 243, 2, 0.986);
+}
+.P2Inputs input:focus,
+.P2Inputs textarea:focus,
+.P2Inputs select:focus {
+  outline: hsl(83, 78%, 40%);
+  box-shadow: 0 0 10px rgba(219, 243, 2, 0.986);
+}
+.P2Inputs input[type="submit"] {
+  margin-top: 15px;
+  height: 60px;
+}
+
+/* Page 3 Style */
+
+#P3form {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  background-color: white;
+
+  margin: auto;
+  border-radius: 20px;
+  height: 500px;
+  width: 600px;
+}
+.P3div1 {
+  border: outset;
+  text-transform: capitalize;
+  height: 60%;
+  background-color: white;
+  margin: 50 px;
+  padding: 30px;
+}
+.P3div2 {
+  border: outset;
+  height: 40%;
+  background-color: yellowgreen;
+  margin: 50 px;
+  padding: 30px;
+}
+#P3IMG {
+  height: 75%;
+}
+#P3ButoonContinue {
+  height: 75px;
+  width: 50%;
+  background-color: white;
+  font-size: xx-large;
+  color: yellowgreen;
+  cursor: pointer;
+  border: outset;
+  border-color: black;
+  border-radius: 10px;
+}
+#P3ButoonContinue:hover {
+  font-size: 150%;
+  background-color: green;
+  color: white;
+  box-shadow: 0 0 10px rgba(219, 243, 2, 0.986);
+}
+#P1ButtonUpload {
+  height: 75px;
+  width: 50%;
+  background-color: white;
+  font-size: xx-large;
+  color: yellowgreen;
+  cursor: pointer;
+  border: outset;
+  border-color: black;
+  border-radius: 10px;
+}
+
+#P1ButtonUpload:hover {
+  font-size: 150%;
+  background-color: green;
+  color: white;
+  box-shadow: 0 0 10px rgba(219, 243, 2, 0.986);
+}
+#P1A:hover {
+  font-size: 150%;
+  background-color: green;
+  color: white;
+  box-shadow: 0 0 10px rgba(219, 243, 2, 0.986);
+}
+iframe {
+  border-radius: 20px;
+}
+
+/* Page 3 Style */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "Nav  Header Header Header Header Header"
+    "Nav  IMG Dic Dic Dic  Upload"
+    "Nav  P_list P_list P_list P_list P_list P_list";
+}
+.Nav {
+  display: grid;
+  grid-area: Nav;
+}
+.Header {
+  grid-area: Header;
+}
+.IMG {
+  grid-area: IMG;
+}
+.Dic {
+  grid-area: Dic;
+}
+.Upload {
+  grid-area: Upload;
+}
+
+.P_list {
+  grid-area: P_list;
+}
